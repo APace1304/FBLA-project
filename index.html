@@ -1,91 +1,50 @@
-<!DOCTYPE html>
+<!DOCTYPE htom>
 <html>
-
 <head>
-<title>Home</title>
-<link rel="stylesheet" type="text/css" href="styles.css">
+<title>NavBar Testing</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
 
-
-
-<!--My navbar-->
-<center>
-<br
 <body>
-<a href = "index.html" class = "mynav">Home  |</a>
-<a href = "GalaReg.html" class = "mynav">Register Here  |</a>
-<a href = "donation.html" class = "mynav">Donate Here  |</a>
-<a href = "contact.html" class = "mynav">Contact Us  </a>
-</center>
-<!-- End of My navbar-->
 
-<br>
-<center>
-<h1>Habitat for Humanity</h1>
+<nav>
+	<ul>
+		<li><a href="#">CompanyName</a></li>
+		<li><a class = "hideOnMobile" href="#">link1</a></li>
+		<li><a class = "hideOnMobile" href="#">link2</a></li>
+		<li><a class = "hideOnMobile" href="#">link3</a></li>
+		<li><a class = "hideOnMobile" href="#">link4</a></li>
+		<li><a class = "hideOnMobile" href="#">link5</a></li>
+		<li class="menuButton" onclick=showSidebar()><a href="#"><i class="material-icons">menu</i></a></li>
+	</ul>
+	<ul class="sidebar">
+		<li style="text-align: right" onclick=hideSidebar()><a href="#"><i class="material-icons">close</i></a></li>
+		<center>
+		<li><a href="#">CompanyName</a></li>
+		<li><a href="#">link1</a></li>
+		<li><a href="#">link2</a></li>
+		<li><a href="#">link3</a></li>
+		<li><a href="#">link4</a></li>
+		<li><a href="#">link5</a></li>
+		</center>
+	</ul>	
+</nav>
+<p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </p>
 
-<img src="gr/HFHgang.jpg" alt="picture of teenagers at a worksite" width="75%" height="auto">
-<br><br><br>
-</center>
+<script>
+function showSidebar(){
+const sidebar = document.querySelector('.sidebar')
+sidebar.style.display = 'flex'
+}
 
-<!--Gala Information starts-->
+function hideSidebar(){
+const sidebar = document.querySelector('.sidebar')
+sidebar.style.display = 'none'
+}
 
-<center>
-<h3>Habitat for Humanity is a nonprofit organization that works in more than 70 countries, as well as all 50 states. Habitat's vision is for everybody to have a decent place to live. To work toward this goal, Habitat partners with families in need who are willing to put in work for their future home and pay an affordable morgage plan.</p>
-<h2>Join Habitat for Humanity as they host a gala in celebration of 48 years of Habitat Construction! </h2><br>
-</h3>
-</center>
-<h3>Location</h3>
-<h4>1420 Creek Trail Dr, Jefferson City, MO 65109</h4><br>
-
-<h3>Date and Time</h3>
-<h4>3:00pm until 6:00pm on March fourth 2024</h4><br>
-
-<h3>Agenda</h3>
-<h4>Speeches by Board of Directors</h4>
-<h4>Dinner</h4>
-<h4>Speeches by volenteers in the area</h4>
-<h4>Donation Request</h4>
-
-<h3>Expectations</h3>
-<h4>Formal Dress is expected.</h4>
-<h4>Entry will not be permitted without proof of a ticket purchase.</h4>
-<h4>Anyone who causes a disturbance, or is disrespectful in any way will be escorted out without a refund.</h4>
-<!--paragraph about HFH-->
-<br><center>
-<h3>The night will consist of various speakers, dinner is provid, as well as many raffles being avalable to participate in. </h3>
-<br><br>
-<img src = "gr/HFHcouple.jpg" width = 75% >
-
-<br><br>
-</center>
-<br><br><br>
-
-
-</ul>
-
-<!--Bottom Buttons-->
-
-<center>
-<div>
-<button><a href = "GalaReg.html">Register Here!</a></button>
-
-<!-- v Non Break Space Entity v -->
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-<button><a href = "donation.html">Donate Now!</a></button>
-</div>
-</center>
-<br><br><br>
-
-
-
-
-
-
-
+</script>
 
 
 </body>
-<footer>
-<center><p>*all information and images taken from Habitat.org*</p></center>
-</footer>
 </html>
