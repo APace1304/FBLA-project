@@ -1,50 +1,47 @@
-<!DOCTYPE htom>
+<!DOCTYPE html>
 <html>
 <head>
-<title>NavBar Testing</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<title>title</title>
+<link rel = "stylesheet" href = "styles.css">
+<link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
 
 <nav>
 	<ul>
-		<li><a href="#">CompanyName</a></li>
-		<li><a class = "hideOnMobile" href="#">link1</a></li>
-		<li><a class = "hideOnMobile" href="#">link2</a></li>
-		<li><a class = "hideOnMobile" href="#">link3</a></li>
-		<li><a class = "hideOnMobile" href="#">link4</a></li>
-		<li><a class = "hideOnMobile" href="#">link5</a></li>
-		<li class="menuButton" onclick=showSidebar()><a href="#"><i class="material-icons">menu</i></a></li>
+	<li><a class = "hideMobile" href = "#">Company Name</a></li>
+	<li><a class = "hideMobile" href = "#">page 2</a></li>
+	<li><a class = "hideMobile" href = "#">page 3</a></li>
+	<li><a class = "hideMobile" href = "#">page 4</a></li>
+	<li><a class = "hideMobile" href = "#">page 5</a></li>
+	<li class = "menuButton" onclick = showSideBar()><i class = "material-icons">menu</i></li>
 	</ul>
-	<ul class="sidebar">
-		<li style="text-align: right" onclick=hideSidebar()><a href="#"><i class="material-icons">close</i></a></li>
-		<center>
-		<li><a href="#">CompanyName</a></li>
-		<li><a href="#">link1</a></li>
-		<li><a href="#">link2</a></li>
-		<li><a href="#">link3</a></li>
-		<li><a href="#">link4</a></li>
-		<li><a href="#">link5</a></li>
-		</center>
-	</ul>	
-</nav>
-<p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </p>
+	
+	<ul class = "sidebar">
+	<li style = "text-align: right" onclick = hideSideBar()><i class = "material-icons">close</i></li>
+	<center>
+	<li><a href = |"#">Company Name</a></li>
+	<li><a href = |"#">page 2</a></li>
+	<li><a href = |"#">page 3</a></li>
+	<li><a href = |"#">page 4</a></li>
+	<li><a href = |"#">page 5</a></li>
+	</center>
+	</ul>
+</body>
+
+
+
 
 <script>
-function showSidebar(){
-const sidebar = document.querySelector('.sidebar')
+function showSideBar(){
+const sidebar = document.querySelector('sidebar')
 sidebar.style.display = 'flex'
 }
 
-function hideSidebar(){
-const sidebar = document.querySelector('.sidebar')
+function hideSideBar(){
+const sidebar = document.querySelector('sidebar')
 sidebar.style.display = 'none'
 }
-
 </script>
-
-
-</body>
 </html>
